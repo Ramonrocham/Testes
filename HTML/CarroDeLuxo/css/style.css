@@ -1,65 +1,225 @@
 @charset "UTF-8";
+
+@font-face {
+    font-family: 'Luxury';
+    src: url(../fontes/Widy\ Thin.otf) format('opentype');
+}
 *{
     margin: auto;
     padding: 0;
+    list-style: none;
+    
 }
 body{
     background-color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Luxury','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
 
 }
 a{
     text-decoration: none;
     color: white;
+    border-radius: 4px;
 }
 a:hover{
     text-decoration: underline;
+    background-color: #ffffff;
+    color: black;
+    transition-duration: 0.5s;
+
 }
 header{
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     max-width: 1400px;
     margin: auto;
     height: 150px;
-    
 }
-div{
-    width: 100%;
+nav a{
+    padding: 9px;
 }
-header h4{
-    margin-left: 5%;
-    display: inline-block;
-    padding: 20px;
-    font-weight: bolder;
+a.pad{
+    padding: 9px;
 }
 
-nav{
-    
-    width: 100%;
-    text-align: center;
+nav ul li{
     display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    
+    padding: 0 10px;
 }
 
-nav >p {
-    margin: auto;
-    text-align: center;
-    padding: 20px;
-    display: inline-block;
+#gaq{
+    border: 1px solid #ffffff;
+    padding: 13px;
+    border-radius: 7px;
 }
-header>a{
-    border: 1px solid white;
-    border-radius: 3px;
+
+#gap a {
+    padding: 13px;
 }
-p#gaq{
-    margin-left: -5%;
-    width: 100%;
-    text-align: right;
-    display: inline-block;
-}
+
 main{
     max-width: 1400px;
     margin: auto;
+}
+h1{
+    text-align: center;
+    font-size: 5em;
+}
+p.centro{
+    text-align: center;
+    max-width: 570px;
+}
+#ltc{
+    padding: 20px;
+    margin: 30px 0px;
+    text-align: center;
+    
+}
+p#decanto{
+    color: lightgray;
+
+}
+
+div#carros{
+    border-top: 1px solid lightgray;
+    margin-top: 30px;
+    padding: 40px;
+}
+#textocarros{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#textocarros h2{
+    font-size: 2em;
+}
+
+#textocarros p{
+    max-width: 550px;
+    text-align: right;
+    color: lightgray;
+    margin-right: 0px;
+}
+#conjunto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.foto{
+    margin: auto;
+    display: inline-block;
+    max-width: 325px;
+    margin: 5px 0px;
+}
+.foto h3{
+    margin: 15px 0px;
+}
+.foto p{
+    color: lightgray;
+    font-size: 0.7em;
+    padding: 2px;
+    line-height: 1.5em;
+}
+p.linkcarro {
+    margin-top: 10px;
+}
+p.linkcarro a{
+    font-size: 1.2em;
+
+}
+#videofalso{
+    margin: 170px auto;
+    display: block;
+}
+#finzinho{
+    display: flex;
+    align-items: center;
+}
+#fotosolo{
+    display: inline-block;
+    max-width: 700px;
+    padding: 30px 0px;
+}
+#fotosolo h2{
+    font-size: 2.0em;
+    max-width: 400px;
+}
+
+#linha{
+    display: inline-block;
+    width: 1px;
+    height: 500px;
+    background-color: lightgray;
+
+}
+
+#textoimg{
+    padding: 30px;
+    display: inline-block;
+    align-items: end;
+}
+#textoimg p {
+    padding-top: 25px;
+}
+
+#carrofundo{
+    margin: 200px auto;
+    background-image: url(../img/Rectangle\ 12\ \(1\).png);
+    max-width: 1120px;
+    height: 500px;
+}
+#carrofundo h2{
+    margin: 0px;
+    padding: 70px 40px 40px 40px;
+    max-width: 400px;
+    font-size: 2.3em;
+}
+
+#carrofundo p{
+    padding-left: 40px;
+    margin: 10px 0px;
+    max-width: 360px;
+    line-height: 1.2em;
+    font-size: 0.8em;
+    color: lightgray;
+
+}
+
+p#linkfundo{
+    margin-top: 45px;
+}
+
+p#linkfundo a{
+    font-size: 1.2em;
+}
+
+aside{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    height: 220px;
+    border-bottom: 1px solid lightgray;
+}
+
+aside p{
+    margin-top: 15px;
+    max-width: 390px;
+    display: inline-block;
+    font-size: 0.8em;
+    color: lightgray;
+}
+footer{
+    display: flex;
+    height: 50px;
+}
+footer p{
+    padding-bottom: 60px;
+}
+
+footer ul{
+    padding-bottom: 60px;
+}
+footer ul li{
+    display: inline-block;
 }
