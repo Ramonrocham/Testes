@@ -1,0 +1,65 @@
+@charset "UTF-8";
+*{
+    margin: auto;
+    padding: 0;
+}
+body{
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
+}
+header{
+    display: block;
+    max-width: 1400px;
+    margin: auto;
+    height: 150px;
+    
+}
+div{
+    width: 100%;
+}
+header h4{
+    margin-left: 5%;
+    display: inline-block;
+    padding: 20px;
+    font-weight: bolder;
+}
+
+nav{
+    
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+nav >p {
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    display: inline-block;
+}
+header>a{
+    border: 1px solid white;
+    border-radius: 3px;
+}
+p#gaq{
+    margin-left: -5%;
+    width: 100%;
+    text-align: right;
+    display: inline-block;
+}
+main{
+    max-width: 1400px;
+    margin: auto;
+}
